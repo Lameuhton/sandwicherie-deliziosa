@@ -21,7 +21,36 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .h1 {
+        @apply md:text-primary_title font-title uppercase;
+    }
+    .h2 {
+        @apply md:text-secondary_title font-title uppercase;
+    }
+
+    .h3 {
+        @apply md:text-tertiary_title font-title;
+    }
+
+    .paragraph {
+        @apply text-content font-text;
+    }
+
+    .small-paragraph {
+        @apply text-content font-text;
+    }
+
+    .button {
+        @apply text-white text-buttons h-[55px] font-text bg-secondary w-fit rounded-[9px];
+    }
+    
+    /* Marges de gauche et droite de la page (ajoutées sur chaque section)*/
+    .sides-page-margin {
+        @apply px-5 lg:px-36
+    }
+
+    .text-gradient {
+        @apply bg-gradient-to-r from-accent to-secondary text-transparent bg-clip-text font-bold;
+    }
 }
+

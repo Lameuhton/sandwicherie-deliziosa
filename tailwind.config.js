@@ -6,10 +6,68 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    // Extend the default Tailwind theme.
     extend: {
+      screens: {
+        xs: "320px",
+        sm: "460px",
+        md: "768px",
+        medium: "1125px",
+        base: "1250px",
+        lg: "1440px",
+        xlarge: "1680px",
+        xl: "1920px",
+        "2xl": "2300px",
+      },
+      fontFamily: {
+        title: ["Inria Sans", "sans-serif"],
+        text: ["Onest", "sans-serif"],
+      },
+      fontSize: {
+        primary_title: [
+          "64px",
+          {
+            fontWeight: "400",
+          },
+        ],
+        secondary_title: [
+          "48px",
+          {
+            fontWeight: "400",
+          },
+        ],
+        tertiary_title: [
+          "32px",
+          {
+            fontWeight: "400",
+          },
+        ],
+        content: [
+          "24px",
+          {
+            fontWeight: "300",
+          },
+        ],
+        buttons: [
+          "20px",
+          {
+            fontWeight: "700",
+          },
+        ],
+        small: [
+          "20px",
+          {
+            fontWeight: "300",
+          },
+        ],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#1E1E1E",
+        secondary: "#E9C261",
+        gray: "#6F6F6F",
+        accent: "#FFB700",
+        background: "#F5F5F5",
+        dark: "#1E1E1E",
       },
     },
   },
