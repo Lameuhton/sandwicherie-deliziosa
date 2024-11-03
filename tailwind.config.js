@@ -30,8 +30,20 @@ module.exports = {
             fontWeight: "400",
           },
         ],
+        primary_title_mobile: [
+          "48px",
+          {
+            fontWeight: "400",
+          },
+        ],
         secondary_title: [
           "48px",
+          {
+            fontWeight: "400",
+          },
+        ],
+        secondary_title_mobile: [
+          "40px",
           {
             fontWeight: "400",
           },
@@ -50,6 +62,12 @@ module.exports = {
         ],
         buttons: [
           "20px",
+          {
+            fontWeight: "700",
+          },
+        ],
+        buttons_mobile: [
+          "18px",
           {
             fontWeight: "700",
           },

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -12,16 +13,15 @@ const Hero = () => {
       }}
     >
       <div className="sides-page-margin">
-        <h1 className="h1 mb-2 text-white">
+        <h1 className="h1 mb-5 text-white">
           Sandwicherie Deliziosa
         </h1>
-        <p className="text-[24px] text-white">
+        <p className="paragraph font-extralight text-white leading-[29px] md:w-[60%] mb-8 md:mb-12">
           Des sandwichs savoureux, préparés avec des ingrédients frais et de
           qualité, pour satisfaire toutes vos envies, à tout moment.
         </p>
-        <button className="button">
-          Commander votre sandwich
-        </button>
+        
+        <Link href="/menu" className="button">Commander votre sandwich</Link>
       </div>
     </section>
   );

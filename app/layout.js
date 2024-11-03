@@ -1,4 +1,4 @@
-import { Inria_Sans, Onest } from "@next/font/google";
+import { Inria_Sans, Onest } from "next/font/google";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import "./globals.css";
@@ -15,7 +15,6 @@ const onest = Onest({
   weight: ['200', '300', '400', '500', '600', '700'], // Toutes les épaisseurs disponibles pour Onest
   subsets: ['latin'],
   style: ['normal'], // Charger normal et italic
-  display: 'swap',
 });
 
 //Metadata
@@ -27,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inriaSans.className} ${onest.className}`}>
+      <body>
         <Header /> {/* Header */}
         {children}{" "}
         {/* 'children' represents the specific content of page.js for each page */}
