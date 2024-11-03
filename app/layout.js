@@ -7,15 +7,14 @@ import "./globals.css";
 const inriaSans = Inria_Sans({
   weight: ['300', '400', '700'], // Toutes les épaisseurs disponibles pour Inria Sans
   subsets: ['latin'], // Les subsets que tu veux charger (par exemple 'latin')
-  style: ['normal', 'italic'], // Charger normal et italic
-  display: 'swap', // Utilise l'option "swap" pour éviter les FOUT (Flash of Unstyled Text)
+  style: ['normal'], // Charger normal et italic
 });
 
 // Import de Onest avec toutes les épaisseurs disponibles
 const onest = Onest({
   weight: ['200', '300', '400', '500', '600', '700'], // Toutes les épaisseurs disponibles pour Onest
   subsets: ['latin'],
-  style: ['normal', 'italic'], // Charger normal et italic
+  style: ['normal'], // Charger normal et italic
   display: 'swap',
 });
 
