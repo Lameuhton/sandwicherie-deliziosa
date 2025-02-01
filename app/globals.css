@@ -28,7 +28,7 @@
     
     /* Marges de gauche et droite de la page (ajoutées sur chaque section)*/
     .sides-page-margin {
-        @apply px-5 lg:px-36
+        @apply px-5 md:px-36 lg:px-48;
     }
 
     .text-gradient {

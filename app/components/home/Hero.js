@@ -14,7 +14,7 @@ const Hero = () => {
     >
       <div className="sides-page-margin">
         <h1 className="h1 mb-5 text-white">
-          Sandwicherie Deliziosa
+          Découvrez Toasté
         </h1>
         <p className="paragraph font-extralight text-white leading-[29px] md:w-[60%] mb-8 md:mb-12">
           Des sandwichs savoureux, préparés avec des ingrédients frais et de

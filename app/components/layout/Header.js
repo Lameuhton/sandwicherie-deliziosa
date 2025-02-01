@@ -31,9 +31,7 @@ const Header = () => {
   return (
     <header
       className={`sides-page-margin fixed w-full ${
-        hasScrolled
-          ? "bg-[#303436] shadow-lg py-4"
-          : "bg-transparent py-4 md:py-12"
+        hasScrolled ? "bg-[#303436] shadow-lg" : "bg-transparent"
       } text-white flex justify-between items-center z-50 transition-all duration-300`}
     >
       {/* Logo */}
@@ -41,11 +39,10 @@ const Header = () => {
         <Image
           src="/logo.svg"
           alt="Logo"
-          width={70}
-          height={70}
-          className="mr-2"
+          width={180}
+          height={180}
+          className="mr-2 w-[140px] md:w-[180px] h-[100px] md:h-[100px]"
         />
-        <p className="text-2xl font-light font-title">Deliziosa</p>
       </div>
 
       {/* Menu Burger Button */}
